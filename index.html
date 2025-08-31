@@ -1,0 +1,51 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Sis &amp; Bro
+  </title>
+  <link rel="icon" href="./img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+ </head>
+ <body class="relative min-h-screen flex flex-col justify-between items-center text-center bg-[#1b1e23] overflow-hidden">
+  <!-- Background -->
+  <img src="./img/bg.jpg" alt="Background"
+       class="absolute inset-0 w-full h-full object-cover" />
+
+  <!-- Konten -->
+ <div class="relative z-10 min-h-screen flex flex-col items-center justify-center">
+  <img class="w-10 h-10 mb-3" src="./img/or1.png" alt="" />
+  <p class="font-inter text-emas text-sm">Wedding invitation</p>
+  <h2 class="font-beau text-emas text-7xl mt-4">Sis</h2>
+  <h2 class="font-beau text-emas text-7xl">&</h2>
+  <h2 class="font-beau text-emas text-7xl mb-4">Bro</h2>
+  <p class="text-emas text-sm mb-2 font-inter">
+    Kepada Yth. Bapak/Ibu/Saudara/i
+  </p>
+  <h3 id="penerima" class="text-xl font-unna text-emas mb-3"></h3>
+  <a href="home.html">
+    <button class="bg-[#d4af37] text-ireng rounded-full px-8 py-2 text-lg font-inter shadow-md font-inter">
+      Buka Undangan
+    </button>
+  </a>
+</div>
+
+  
+  <script>
+      // Ambil parameter dari URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('to'); // baca nilai ?to=
+  
+      // Kalau ada nama → tampilkan di <h3>
+      if (nama) {
+        document.getElementById("penerima").innerText = nama;
+      }
+    </script>
+</body>
+</html>

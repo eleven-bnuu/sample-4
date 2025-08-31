@@ -1,0 +1,52 @@
+body {
+  background-color: #1b1e23;
+  font-family: Arial, sans-serif;
+  color: #f6f6f6;
+}
+
+.title {
+  color: darkblue;
+  font-size: 32px;
+}
+
+.desc {
+  color: #555;
+  font-size: 18px;
+}
+
+.text-emas {
+  color: #d4af37;
+}
+
+.text-putih {
+  color: #f6f6f6;
+}
+
+.text-ireng {
+  color: #1b1e23;
+}
+
+.font-beau {
+  font-family: "Beau Rivage", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-unna {
+  font-family: "Unna", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-unna-regular {
+  font-family: "Unna", serif;
+  font-weight: 400;
+  font-style: normal;
+}
